@@ -11,7 +11,7 @@ from app.product_client import get_product_fetcher
  
 Base.metadata.create_all(bind=engine) 
  
-app = FastAPI(title="Lab 3 - FastAPI SQLAlchemy User API") 
+app = FastAPI(title="Lab 5 - HTTPX") 
  
  
 @app.get("/health") 
