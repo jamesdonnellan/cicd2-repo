@@ -6,3 +6,5 @@ venv/
 .coverage 
 htmlcov/ 
 app.db 
+tests/__pycache__/
+product_service/__pycache__
