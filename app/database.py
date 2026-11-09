@@ -1,7 +1,12 @@
 from sqlalchemy import create_engine
 from sqlalchemy.orm import Session, sessionmaker
 
-DATABASE_URL = "sqlite:///./app.db" # Creates/Uses app.db in the project folder 
+import os 
+ 
+DATABASE_URL = os.getenv( 
+    "DATABASE_URL", 
+    "sqlite:///./app.db", 
+) 
 
 engine = create_engine( # SQLAlchemy object that knows how to communicate with the database
     DATABASE_URL,
